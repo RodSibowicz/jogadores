@@ -40,7 +40,7 @@ console.log("Conexão estabelecida com sucesso")
 )
 
 app.get("/cadastro",function (req, res) {
-    res.sendFile(__dirname + "https://rodsibowicz.github.io/site.github.io/cadastro.html");
+    res.sendFile(__dirname + "https://rodsibowicz.github.io/jogadores/cadastro.html");
 })
 
 app.post('/formulario', upload.single('imagem'), (req, res) =>{
@@ -70,7 +70,7 @@ app.post('/formulario', upload.single('imagem'), (req, res) =>{
 })
 
 app.listen(8081, function(){
-    console.log("servidor rodando na url: https://rodsibowicz.github.io/site.github.io") 
+    console.log("servidor rodando na url: https://rodsibowicz.github.io/jogadores/") 
 })
 
 
@@ -158,8 +158,8 @@ app.get("/", function(req, res) {
                 <nav>
                     <ul>
                         <img src="https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt03dc217d0e54036a/5dbb29281b83a568128c8c9d/Shadowlands_Logo.png" alt="WoWShadowlands" height="100" width="300">
-                        <button class="button" ><a href="http://localhost:8081/cadastro">Cadastro</a></button>
-                        <button class="button"><a href="http://localhost:8081/listar">Relatório de players</a></button>
+                        <button class="button" ><a href="https://rodsibowicz.github.io/jogadores/cadastro">Cadastro</a></button>
+                        <button class="button"><a href="https://rodsibowicz.github.io/jogadores/listar">Relatório de players</a></button>
                     </ul>
                 </nav>
                 
